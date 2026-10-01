@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Positioning evmOS — Mideg Dugarova</title>
+
+  <meta
+    name="description"
+    content="A retrospective case study in technical product marketing: how customer conversations changed the positioning of evmOS, and why an existing community created a second positioning constraint."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #fafafa;
+      color: #171717;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(820px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 70px 0 50px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 36px;
+      color: #555;
+    }
+
+    .eyebrow {
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #666;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin: 14px 0 22px;
+      max-width: 780px;
+      font-size: clamp(2.7rem, 6vw, 5rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      font-weight: 650;
+    }
+
+    .dek {
+      max-width: 740px;
+      font-size: 1.22rem;
+      color: #444;
+    }
+
+    .meta {
+      margin-top: 28px;
+      font-size: 0.92rem;
+      color: #666;
+    }
+
+    article {
+      padding: 60px 0 90px;
+    }
+
+    h2 {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0 0 20px;
+      font-size: 1.03rem;
+    }
+
+    ul {
+      margin: 20px 0 28px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 18px;
+      font-size: 1.03rem;
+    }
+
+    strong {
+      font-weight: 650;
+    }
+
+    .role {
+      margin: 34px 0;
+      padding: 22px 24px;
+      background: #f1f1f1;
+      border-radius: 8px;
+    }
+
+    .role p:last-child {
+      margin-bottom: 0;
+    }
+
+    .takeaway {
+      margin: 45px 0 0;
+      padding-top: 30px;
+      border-top: 1px solid #ddd;
+      font-size: 1.12rem;
+    }
+
+    .footer-nav {
+      padding: 40px 0 70px;
+      border-top: 1px solid #ddd;
+    }
+
+    a {
+      color: inherit;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        padding-top: 45px;
+      }
+
+      article {
+        padding-top: 45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main>
+
+  <header>
+    <a class="back" href="../index.html">← Back to portfolio</a>
+
+    <p class="eyebrow">Positioning / Technical Product Marketing</p>
+
+    <h1>
+      Positioning evmOS: customer complexity and community expectations
+    </h1>
+
+    <p class="dek">
+      A retrospective on how customer conversations changed what we emphasised
+      in the commercial offer — and why the existing Evmos community created a
+      second positioning constraint.
+    </p>
+
+    <p class="meta">
+      Retrospective case study · evmOS
+    </p>
+  </header>
+
+
+  <article>
+
+    <p>
+      When you build a product, it makes sense to you because you already know
+      why each component exists and how the pieces fit together. A prospective
+      customer has to figure that out while deciding whether it is worth adopting.
+    </p>
+
+    <p>
+      I ran into this while working on evmOS positioning.
+    </p>
+
+    <p>
+      We led with EVM functionality and interoperability. Prospects asked about
+      alternatives and whether our codebase was more complex. Those conversations
+      pushed us to give integration and ongoing maintenance more prominence in
+      the commercial offer.
+    </p>
+
+
+    <h2>My role</h2>
+
+    <div class="role">
+      <p>
+        I worked on positioning with the CEO and CPO, drawing on competitive
+        analysis and conversations with customers and prospects.
+      </p>
+
+      <p>
+        My work also covered the CEO’s pitch deck, website messaging and the
+        launch campaign. I wrote the HAQQ and Realio partnership announcements
+        linked below.
+      </p>
+    </div>
+
+
+    <h2>What the initial pitch missed</h2>
+
+    <p>
+      EVM functionality and interoperability were real capabilities, but buyers
+      had other ways to build.
+    </p>
+
+    <p>
+      The alternatives we discussed included
+      <a href="https://github.com/polkadot-evm/frontier" target="_blank" rel="noopener noreferrer">Frontier</a>,
+      an Ethereum compatibility layer for Substrate;
+      <a href="https://github.com/bluealloy/revm" target="_blank" rel="noopener noreferrer">revm</a>,
+      an EVM implementation written in Rust; and
+      <a href="https://medium.com/berachain-foundation/introducing-polaris-vm-2a0b77d777f8" target="_blank" rel="noopener noreferrer">Polaris</a>,
+      a modular EVM framework with Cosmos SDK integration.
+    </p>
+
+    <p>
+      These were different starting points, with different capabilities and
+      integration requirements.
+    </p>
+
+    <p>
+      <strong>
+        EVM support alone did not explain why a team should choose evmOS.
+      </strong>
+    </p>
+
+    <p>
+      When prospects questioned the complexity of our codebase, I understood
+      that as a concern about the work adopting it would create for their team.
+      Repeating the capability list would not answer that concern.
+    </p>
+
+    <p>
+      I would not treat every question about complexity as the same question.
+      Some could come from unfamiliarity; some could reflect real engineering
+      requirements.
+    </p>
+
+    <p>
+      What mattered was that customers were raising it themselves.
+    </p>
+
+
+    <h2>What we changed</h2>
+
+    <p>
+      We put more emphasis on integration help and ongoing maintenance, alongside
+      bridging and customisation.
+    </p>
+
+    <p>
+      The team could help customers integrate the technology and keep it
+      maintained. Customers could also extend their chains with their own Cosmos
+      SDK modules alongside the EVM.
+    </p>
+
+    <p>
+      This gave us more concrete value to explain.
+    </p>
+
+    <p>
+      Buyers needed to assess what their own team would have to take on and where
+      we could help. Integration and maintenance support deserved space in the
+      pitch because they addressed that part of the decision.
+    </p>
+
+    <p>
+      The partnership announcements show how I communicated specific uses of the
+      technology:
+    </p>
+
+    <ul>
+      <li>
+        In the
+        <a href="https://medium.com/evmos/evmos-pioneering-ethical-defi-with-haqq-59f5650404dd"
+           target="_blank"
+           rel="noopener noreferrer">
+          HAQQ announcement, published on May 23, 2024
+        </a>,
+        I explained how the evmOS upgrade gave Solidity contracts access to IBC.
+        <a href="https://old.haqq.network/blog/haqq-integrates-evmos-tech"
+           target="_blank"
+           rel="noopener noreferrer">
+          HAQQ’s own account
+        </a>
+        described architectural limitations between its EVM and Cosmos layers
+        that the integration addressed.
+      </li>
+
+      <li>
+        In the
+        <a href="https://medium.com/evmos/realio-partners-with-evmos-to-expand-the-rwa-outreach-0681930cd472"
+           target="_blank"
+           rel="noopener noreferrer">
+          Realio announcement, published on May 30, 2024
+        </a>,
+        I explained the role of EVM compatibility and the flexibility to build
+        custom Cosmos SDK modules, citing Realio’s recently launched
+        multi-staking module.
+      </li>
+    </ul>
+
+    <p>
+      These are examples of the product capabilities and my work explaining
+      them.
+    </p>
+
+    <p>
+      <strong>
+        They do not establish that the positioning change caused either
+        partnership or reduced the teams’ maintenance workload.
+      </strong>
+    </p>
+
+
+    <h2>The community constraint</h2>
+
+    <p>
+      There was another audience to consider: the existing Evmos blockchain
+      community.
+    </p>
+
+    <p>
+      evmOS was the software framework behind the commercial offering, and the
+      community already associated the project with openness and freedom - think of typical, most opinionated web3 audience.
+      Keeping that community mattered, as the Evmos chain was still our main product.
+    </p>
+
+    <p>
+      A software licensing proposition risked clashing with those expectations.
+      We had to consider how people would interpret the commercial offer and what
+      they might think it meant for the project they already knew.
+    </p>
+
+    <p>
+      Explaining the value of integration and maintenance to a buyer did not
+      automatically answer those community questions.
+    </p>
+
+    <p>
+      The chalenge of the positioning was that we had to account for both audiences - which had
+      different concerns.
+    </p>
+
+
+    <p class="takeaway">
+      Customer conversations changed what we emphasised because they revealed
+      something that was easy to overlook due to our familiarity with the product:
+      <strong>
+        buyers were assessing the work of adopting it as well as what it could do.
+      </strong>
+    </p>
+
+  </article>
+
+
+  <div class="footer-nav">
+    <a href="../index.html">← Back to portfolio</a>
+  </div>
+
+</main>
+
+</body>
+</html>
